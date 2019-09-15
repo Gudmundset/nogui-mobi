@@ -2,13 +2,20 @@ import requests
 import argparse
 
 def get_stations(api, str_arg, min_bikes):
-
+  '''
+  Function: Print all stations matching input and minimum bikes
+  '''
+  
   for i in api.json()['result']:
       if str_arg in i['name']:
         if int(i['avl_bikes']) > min_bikes:
           print({k:v for k,v in i.items()})
 
 def get_options():
+  '''
+  Function: Return parsed command line arguments
+  '''
+  
   default_api = 'http://vancouver-ca.smoove.pro/api-public/stations'
   default_station = "Cordova & Granville"
   default_minbikes = 1
@@ -25,6 +32,10 @@ def get_options():
   return args
 
 def main():
+    '''
+    Method: Run all functions
+    '''
+    
     options = get_options()
     r = requests.get(options.api)
     if options.station:
