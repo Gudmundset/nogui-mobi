@@ -1,4 +1,4 @@
-# nogui-mobi.py
+# mobi-stations.py
 Sometimes, you just don't want a GUI. I made this to email myself every morning when I get to Waterfront to let me know if there are any bikes at Cordova & Granville.
 
 REPL: https://repl.it/repls/SnoopySoupyFtpclient
