@@ -1,5 +1,5 @@
 # mobi-stations.py
-Sometimes, you just don't want a GUI. I made this to email myself every morning when I get to Waterfront to let me know if there are any bikes at Cordova & Granville.
+Sometimes, you just don't want a GUI. I made this to email myself every morning when I get to Waterfront to let me know if there are any bikes at Cordova & Granville if it's active and over a minimum number available.
 
 mobi-stations REPL: https://repl.it/repls/SnoopySoupyFtpclient
 
