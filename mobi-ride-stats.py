@@ -47,7 +47,7 @@ def ride_stats(rides, headers):
     howie_long = re.findall(r'\d+', ride['DURATION'])
     howie_long = get_hour(howie_long)
     how_far = get_km(ride['DISTANCE COVERED'])
-    how_fast = howie_long * how_far
+    how_fast = (1 / howie_long)* how_far
     ride['HOW_FAST'] = how_fast
     ride_list.append(ride)
     
@@ -72,7 +72,11 @@ def ride_stats(rides, headers):
   for _,ride in enumerate(reversed(ride_list)):
     if _ > 10:
         break
-    print('{0}: {1:.2f} km/h'.format(ride['BIKE'], ride['HOW_FAST']))
+    print('{0}: {1:.2f} km/h   ({2} - {3}) - {4}'.format(ride['BIKE'], 
+                                             ride['HOW_FAST'], 
+                                             ride['DEPARTURE DATE'],
+                                             ride['RETURN DATE'],
+                                             ride['DISTANCE COVERED'],))
 
   print('\nmost common individual bikes:') 
   for n,b in enumerate(mostcommon.most_common(10)):
