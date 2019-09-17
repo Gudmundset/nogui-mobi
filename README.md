@@ -11,7 +11,7 @@ runner@repl.it:~$ python main.py -m 10 Granville
 {'name': '0063 Robson & Granville', 'coordinates': '49.281506,  -123.120101', 'total_slots': 32, 'free_slots': 17, 'avl_bikes': 15, 'operative': True, 'style': ''}
 
 # mobi-ride-stats.py
-The website makes no assumptions so I did a few calculations. I was interested in bagging the data and finding out which series was the fastest. Based on the data, 15**, 16** and 03** are the best ones for my riding style.
+The website (https://www.mobibikes.ca/en/account) makes no assumptions, so I did a few calculations of my own. I was interested in bagging the data and finding out which series was the fastest. My theory was that newer bikes 1000+ were better on average - I was wrong. Based on the data, 06** was the fastest.
 
 mobi-ride-stats REPL: https://repl.it/@PhilipLarson/CompetitiveEverlastingSoftwareagent
 
