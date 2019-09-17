@@ -19,7 +19,7 @@ runner@repl.it:~$ python mobi-ride-stats.py
 
 number of rides analyzed: 499\
 
-fastest rides:
+fastest rides:\
 1662: 30.00 km/h   (30-08-2018 10h13m26 - 30-08-2018 10h24m40) - 5.583kms\
 0656: 19.01 km/h   (19-06-2018 10h22m34 - 19-06-2018 10h31m39) - 2.852kms\
 1551: 18.51 km/h   (31-07-2018 09h54m47 - 31-07-2018 10h04m07) - 2.858kms\
